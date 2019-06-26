@@ -1,0 +1,63 @@
+body{
+    font: Georgia, Garamond, serif;
+   
+    color: #404040;
+    background: white;
+}
+h1{
+    font: Lucida 'Sans Unicode', Helvetica, Arial,  sans-serif;
+    color: #A4A400;
+    background-color:#F0F0F0;
+    text-decoration: underline;
+    font-size: 18pt;
+}
+
+#top-header{
+    font-size: 22pt;
+    text-align: center;
+}
+a{
+    color: #A4A400;
+    text-decoration: underline;
+}
+#ing-ul{
+    list-style: disc; 
+}
+.comment{
+    background-color: yellow;
+    font-style: italic;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; 
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    position: absolute;
+    z-index: 1;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  
+  #bottom-link{
+      width: 285px;
+  }
+  #bottom-link span{
+    text-align: right;
+    display: block;   
+  }
+  #bottom-link a{
+    text-align: left;
+  }
+
