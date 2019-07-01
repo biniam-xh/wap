@@ -1,11 +1,11 @@
 body{
-    font: 'Georgia', Garamond, serif;   
+    font-family: 'Georgia', Garamond, serif;   
     color: #404040;
     background: url("../img/silverware.jpg") white;
     background-attachment: fixed;
 }
 h1{
-    font: Lucida, 'Sans Unicode', Helvetica, Arial,  sans-serif;
+    font-family: Lucida, 'Sans Unicode', Helvetica, Arial,  sans-serif;
     color: #A4A400;
     background-color:#F0F0F0;
     text-decoration: underline;
