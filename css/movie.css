@@ -68,3 +68,14 @@ dl{
     padding: 8px;
     background: #E8DC9B;
 }
+#modal{
+    width: 400px;
+    position: absolute;
+    display: none;
+    height: 300px;
+    background: #A2B964;
+    z-index: 5000;
+    text-align: center;
+    top: 100px;
+    left: 500px;
+}
