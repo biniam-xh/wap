@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Object Factory</title>
+    <link href="css/styleme.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <form>
+            <label for="name">Account: </label>
+            <input type="text" name="name" id="nameInput" required><br> 
+            <label for="deposit">Deposit:</label> 
+            <input type="text" name="deposite" id="deposit" required><br>
+            
+            <input type="button" name="create" id="create" value="Create New Account"><br>
+            
+            <textarea id="result" cols="50" rows="8"></textarea>
+    </form>
+  
+</body>
+
+<script>
+        var accountInfoList = [];
+        const account = (function() {
+            var name;
+            var balance;
+            var type;
+
+            const createAccount = function(name, balance, type) {
+                this.name = name;
+                this.balance = balance;
+                this.type = type;
+            }
+            const getBalance = function() {
+                return this.balance;
+            }
+            const getName = function() {
+                return this.name;
+            }
+            const getType = function() {
+                return this.type;
+            }
+            return {
+                createAccount: createAccount,
+                getBalance: getBalance,
+                getName: getName,
+                getType: getType
+            };
+        });
+        const clickHandler = function() {
+            
+            accountInfoList = [];
+            var depositInput = document.getElementById("deposit").value;
+            var nameInput = document.getElementById("nameInput").value;
+            var savingAccount = account();
+            savingAccount.createAccount(nameInput, depositInput, "Saving");
+            accountInfoList.push(savingAccount);
+            var checkingAccount = account();
+            checkingAccount.createAccount(nameInput, depositInput, "Checking");
+            accountInfoList.push(checkingAccount);
+            var businessAccount = account();
+            businessAccount.createAccount(nameInput, depositInput, "Business");
+            accountInfoList.push(businessAccount);
+            var result = document.getElementById("result");
+            result.innerHTML = "";
+
+            accountInfoList.forEach(acc => {
+                result.innerHTML += acc.getName() + " : " + acc.getType() + " : " + acc.getBalance() + "\n";
+            });
+        }
+        document.getElementById("create").onclick = clickHandler;
+    </script>
+
+</html>
