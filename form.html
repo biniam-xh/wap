@@ -7,31 +7,175 @@
 </head>
 <body>
     
-    <div class="main">
-            <ul id="navigation">
-                    <li><a href="index.html">Homepage</a></li>
-                    <li><a href="about.html">about me</a></li>
-                    <li><a href="pie.html">pie (homework 1)</a></li>
-                    <li><a href="tmnt.html">movie review</a></li>
-                </ul>
+    <div class="container">
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="firstname">
+                        <label for="firstName">First Name</label>
+                        <input type="text" required name="firstName" id="firstName" pattern="[a-zA-Z]{3,}" />
+                    </div>
+                    <div class="lastName">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" id="lastName" required pattern="[a-zA-Z]{3,}" />
+                    </div>
+                    <div class="birthdate">
+                        <label for="birthdate">Date of Birth</label>
+                        <input type="date" name="birthdate" id="birthdate" pattern="(0?[1-9]|[12][0-9]|3[01])/(0?[1-9]|1[012])/\d{4}" placeholder="mm/dd/yyyy" required />
+                    </div>
+                    <div class="motherName">
+                        <label for="motherName">Mother’s Maiden Name</label>
+                        <input type="text" name="motherName" id="motherName" required pattern="[a-zA-Z]{3,}" />
+                    </div>
+                    <div class="sin">
+                        <label for="sin">Social Insurance Number(Optional)</label>
+                        <input type="text" name="sin" id="sin" placeholder="XXX-XXX-XXX" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" />
+                    </div>
+                    <div class="learnCard">
+                        <label for="learnCard">How did you learn about this card? (Optional)</label
+                >
+                <select name="learnCard" id="learnCard">
+                  <option value="" disabled="" selected>Select source</option>
+                  <option value="mailOffer">Mail Offer</option>
+                  <option value="searchEngine">Search Engine</option>
+                  <option value="onlineBanner">Online Banner Ad or Video</option>
+                  <option value="facebook">Facebook Ad or Video</option>
+                  <option value="comparisonSite"
+                    >Credit Cards Comparison Site</option
+                  >
+                  <option value="email">Email with CapitalOne Content</option>
+                  <option value="familyFriend">Family or Friend</option>
+                  <option value="television">Television</option>
+                  <option value="outdoorAd">Outdoor or Transit Ad</option>
+                  <option value="newspaper">Newspaper</option>
+                  <option value="magazine">Magazine</option>
+                  <option value="sponsoredEvent">CapitalOne Sponsored Event</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </fieldset>
+            <hr />
+            <fieldset>
+              <legend>Contact Information</legend>
+              <div class="address">
+                <label for="address">Home Address (No P.O. Boxes)</label>
+                        <input type="text" name="address" id="address" required pattern="^\w" />
+                    </div>
+                    <div class="suite">
+                        <label for="suite">Suite/Apt. # (if Applicable)</label>
+                        <input type="text" name="suite" id="suite" pattern="^\w" />
+                    </div>
+                    <div class="email">
+                        <label for="email">Email Address</label>
+                        <input type="text" name="email" id="email" required pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+                    </div>
+                    <div class="phone">
+                        <label for="phone">Primary Phone Number</label>
+                        <input type="tel" name="phone" id="phone" placeholder="(XXX)-XXX-XXXX" required pattern="^\(?[0-9]{3}\)?[- ]?[0-9]{2}[- ]?[0-9]{4}$" />
+                    </div>
+                </fieldset>
+                <hr />
+                <fieldset>
+                    <legend>Authorized User</legend>
+                    <input type="checkbox" name="authUser" id="authUser" required />
+                    <label for="authUser">
+                      Yes! I would like to add an Authorized User (AU) to my account and receive a second card with their name on it.
+                    </label>
+                </fieldset>
+                <hr />
+                <fieldset>
+                    <legend>Employment Information</legend>
+                    <div class="learnCard">
+                        <label for="learnCard"> Employment Status</label>
+                        <select name="learnCard" id="learnCard">
+                            <option value="" disabled selected>Select status</option>
+                            <option value="employed">Employed</option>
+                            <option value="selfEmployed">Self-Employed</option>
+                            <option value="retired">Retired</option>
+                            <option value="student">Student</option>
+                            <option value="unemployed">Unemployed</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <hr />
+                <fieldset>
+                    <legend>Financial Information</legend>
+                    <section>
+                       <div class="doYou">
+                          <p>Do you: (Optional)</p>
+                        <input type="radio" name="doYou" id="own" />
+                        <label for="own">Own</label>
+                        <input type="radio" name="doYou" id="rent" />
+                        <label for="rent">Rent</label>
+                        <input type="radio" name="doYou" id="lvParent" />
+                        <label for="lvParent">Live with parents</label>
+                        <input type="radio" name="doYou" id="other" />
+                        <label for="other">Other</label>
+                    </div>
+                  </section>
+                   
+                    <div class="income">
+                        <label for="income">Your Annual Income (Before Taxes)</label>
+                        <input type="number" name="income" id="income" />
+                    </div>
+                    <div class="hIncome">
+                        <label for="hIncome">Other Household Income (Before Taxes)</label
+                >
+                <input type="number" name="hIncome" id="hIncome" />
+              </div>
+              <div class="mortgage">
+                <p>
+                  Do you have a mortgage? (Optional)
+                </p>
+                <input type="radio" name="mortgage" id="mortgageYes" /><label
+                  for="mortgageYes"
+                  >Yes</label
+                >
+                <input type="radio" name="mortgage" id="mortgageNo" /><label
+                  for="mortgageNo"
+                  >NO</label
+                >
+              </div>
+              <div class="mMortgage">
+                <label for="mMortgage">Monthly Rent/Mortgage (Optional)</label>
+                        <input type="number" name="mMortgage" id="mMortgage" />
+                    </div>
+                    <div class="haveAccount">
+                        <label for="haveAccount">Do you have any bank accounts?</label>
+                        <select name="haveAccount" id="haveAccount">
+                          <option value="" disabled="" selected>Select a type</option>
+                          <option value="chequing-and-savings">Chequing and Savings</option>
+                          <option value="chequing-only">Chequing Only</option>
+                          <option value="savings-only">Savings Only</option>
+                          <option value="neither">Neither</option>
+                        </select>
+                    </div>
+                    <div class="cash">
+                        <p>
+                            Would you like to use your card for cash advances? (Optional)
+                        </p>
+                        <input type="radio" name="cash" id="cashYes" /><label for="cashYes">Yes</label
+                >
+                <input type="radio" name="cash" id="cashNo" /><label
+                  for="cashNo"
+                  >NO</label
+                >
+              </div>
+            </fieldset>
+            <hr />
+            <p id="endAgreement">
+              By selecting “Review My Application”, you confirm that you have read,
+              understood and agree to the above Important Disclosures.
+            </p>
+            <div id="submit">
+               <input type="submit" value="Review My Application" />
+            </div>          
+          </form>
+        </div>
 
-                <div>
-                    <form>
-                        <label for="firstname">Firstname</label>
-                        <input type="text" name="firstname"/>
-                        
-                        <label for="firstname">Firstname</label>
-                        <input type="text" name="firstname"/>
-                    </form>
-                </div>
-    </div>
+      </body>
+
+    </html>
 
 
-    <a href="https://validator.w3.org/check/referer">
-        <img src="http://mumstudents.org/cs472/images/w3c-html.png" alt="html validator"/>
-    </a>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer">
-        <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="html validator"/>
-      </a>
-</body>
-</html>
+    

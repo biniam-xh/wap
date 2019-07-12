@@ -1,5 +1,26 @@
-.main{
-    width: 800px;
+body{
+    font-family: 'Courier New', Courier, monospace;
+    width: 600px;
     margin: auto;
-    padding: 15px;
+}
+h1, h2{
+    color: red;
+}
+.container{
+    background-color: lightgray;
+    padding: 20px;
+}
+#navigation{
+    background-color: lightcyan;
+    padding: 10px;
+}
+#navigation li{
+    list-style: none;
+}
+input[type="submit"]{
+    background-color: green;
+    color: white;
+    width: 200px;
+    min-height: 40px;
+    float: right;
 }
