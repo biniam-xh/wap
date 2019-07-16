@@ -1,3 +1,4 @@
+package controllers;
 
 import data.DataAccess;
 import models.User;
@@ -56,7 +57,7 @@ public class Login extends HttpServlet {
             response.sendRedirect(request.getContextPath() + "/home");
         }
         else{
-            request.getRequestDispatcher("login.jsp").forward(request,response);
+            request.getRequestDispatcher("/views/login.jsp").forward(request,response);
         }
     }
 
@@ -85,6 +86,6 @@ public class Login extends HttpServlet {
                 }
             }
         }
-        request.getRequestDispatcher("login.jsp").forward(request,response);
+        request.getRequestDispatcher("views/login.jsp").forward(request,response);
     }
 }

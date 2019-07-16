@@ -1,3 +1,5 @@
+package controllers;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -12,6 +14,6 @@ public class Home extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("home.jsp").forward(request,response);
+        request.getRequestDispatcher("views/home.jsp").forward(request,response);
     }
 }

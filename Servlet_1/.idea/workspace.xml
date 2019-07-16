@@ -7,25 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14fb7f3b-f7dd-4ebe-9180-ca265b6e2594" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/wap.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Servelets_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Support.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Servlet_2/.idea/artifacts/Servlet_2_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Servlet_2/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Servlet_2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Servlet_2/src/main/java/Home.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Servlet_2/src/main/java/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Servlet_2/src/main/java/LoginFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Servlet_2/src/main/java/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Servlet_2/src/main/java/UserSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Servlet_2/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Servlet_2/web/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Servelets_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Servelets_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Servelets.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Servlet_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Servlet_2/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -121,25 +108,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Servelets_1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Servelets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Servelets_1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Servelets" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Servelets_1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Servelets" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="Servlet_1" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -152,6 +128,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Facets" />
@@ -340,17 +317,19 @@
       <workItem from="1563067144060" duration="39000" />
       <workItem from="1563076820794" duration="186000" />
       <workItem from="1563152361756" duration="149000" />
+      <workItem from="1563165823366" duration="34000" />
+      <workItem from="1563165908930" duration="110000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4527000" />
+    <option name="totallyTimeSpent" value="4671000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="20" width="1346" height="688" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2651633" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27293935" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -369,7 +348,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.32972974" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32972974" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />

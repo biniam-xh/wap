@@ -7,6 +7,11 @@
         <element id="directory" name="classes">
           <element id="module-output" name="Project_auction" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
+          <element id="library" level="project" name="Maven: junit:junit:4.10" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.16" />
+        </element>
       </element>
     </root>
   </artifact>

@@ -16,6 +16,7 @@
     <div class="row">
         <div class="offset-md-2 col-md-8">
             <h1>Login</h1>
+            <h3>Username: ben@gmail.com  password: pass</h3>
             <form action="/Servlet_2/login" method="post">
                 <div class="form-group">
                     <label for="email">Email address:</label>
