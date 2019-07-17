@@ -6,8 +6,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.List;
-import java.util.Optional;
+
 
 @WebFilter(urlPatterns = {"/login", "/home", "/product", "/MyProducts", "/checkout"})
 public class LoginFilter implements Filter {
@@ -34,7 +33,6 @@ public class LoginFilter implements Filter {
             response.sendRedirect(loginURI);
         }
 
-
     }
 
     @Override
@@ -42,7 +40,7 @@ public class LoginFilter implements Filter {
 
     }
 
-    // ...
+
 }
 
 

@@ -1,6 +1,7 @@
 package controllers;
 
 import data.DataAccess;
+import data.DataSet;
 import models.User;
 
 import javax.servlet.ServletException;
@@ -8,8 +9,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.io.IOException;
 import java.util.List;
-import java.util.Optional;
-
 
 
 @WebServlet("/login")
@@ -39,7 +38,7 @@ public class Login extends HttpServlet {
             else{
                 Cookie cookie = null;
                 Cookie[] cookies = null;
-                // Get an array of Cookies associated with this domain
+
                 cookies = request.getCookies();
 
                 if( cookies != null ) {

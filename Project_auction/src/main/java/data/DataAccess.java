@@ -15,10 +15,25 @@ import java.util.Date;
 import java.util.List;
 
 public class DataAccess {
+    // Initialize the database
+    private static Connection con;
+
+    static {
+        try {
+            con = DatabaseConnection.initializeDatabase();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public DataAccess() throws SQLException, ClassNotFoundException {
+    }
+
     public static boolean updateProduct(Product product) throws IOException {
         try {
-            // Initialize the database
-            Connection con = DatabaseConnection.initializeDatabase();
+
 
             // create our java preparedstatement using a sql update query
             PreparedStatement ps = con.prepareStatement(
@@ -35,8 +50,6 @@ public class DataAccess {
             ps.close();
             return true;
         } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
         return false;
@@ -63,7 +76,7 @@ public class DataAccess {
 
     public static boolean checkLogin(String username, String password){
         try {
-            Connection con = DatabaseConnection.initializeDatabase();
+
             PreparedStatement ps = con.prepareStatement(
                     "SELECT * from users where username=? and password=?");
             ps.setString(1,username);
@@ -75,8 +88,6 @@ public class DataAccess {
 
         } catch (SQLException e) {
             e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
         }
 
         return false;
@@ -84,7 +95,7 @@ public class DataAccess {
 
     public static User getUser(String username){
         try {
-            Connection con = DatabaseConnection.initializeDatabase();
+
             PreparedStatement ps = con.prepareStatement(
                     "SELECT * from users where username=?");
 
@@ -104,8 +115,6 @@ public class DataAccess {
 
         } catch (SQLException e) {
             e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
         }
 
         return null;
@@ -116,7 +125,7 @@ public class DataAccess {
 
     public static boolean registerUser(User user){
         try {
-            Connection con = DatabaseConnection.initializeDatabase();
+
             PreparedStatement ps = con.prepareStatement(
                     "INSERT into users (first_name, last_name, username, password, address ) values(?,?,?,?,?)");
             ps.setString(1,user.getFirst_name());
@@ -131,8 +140,6 @@ public class DataAccess {
             }
 
         } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
 

@@ -31,9 +31,17 @@
                         <div id="loader" class="spinner-border text-primary" role="status">
                             <span class="sr-only">Loading...</span>
                         </div>
-                        <button type="submit" id="place_bid" class="btn btn-primary btn-s">Place Bid</button>
+                        <button type="submit" id="place_bid" class="btn btn-success btn-s">Place Bid</button>
 
                     </div>
+
+                    <c:if test="${!product.expired}">
+                        <div class="form-group">
+                            <div id="bid_status">
+
+                            </div>
+                        </div>
+                    </c:if>
 
                 </form>
             </c:if>

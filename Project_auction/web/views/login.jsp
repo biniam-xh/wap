@@ -3,7 +3,7 @@
 <div class="container">
     <div class="row">
         <div class="offset-md-3 col-md-6" id="login_container">
-            <h2 class="text-center">Login</h2>
+            <h4 class="text-center">Login</h4>
 
             <form action="/Project_auction/login" method="post">
                 <div class="form-group">

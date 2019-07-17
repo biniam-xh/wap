@@ -5,7 +5,7 @@
     <div class="container">
         <div class="section-title text-center">
             <h2>My Antiques</h2>
-            <p class="separator">you have winner of the following items</p>
+            <p class="separator">you are winner of the following items</p>
         </div>
     </div>
 
@@ -28,7 +28,10 @@
                             <span class="pull-left" style="color: #71c55d;">${product.bid_amount}</span>
 
                             <c:if test="${product.paid}">
-                                <span style="float: right;" class="pull-right">Shipment Status: pendding</span>
+                                <span style="float: right;" class="pull-right">Shipment Status: pending</span>
+                            </c:if>
+                            <c:if test="${!product.paid}">
+                                <a href="/Project_auction/product?product_id=${product.id}&myProducts=true"><span style="float: right; color: #71c55d;" class="pull-right">claim item</span></a>
                             </c:if>
                         </div>
                     </div>

@@ -25,8 +25,8 @@ public class Bid extends HttpServlet {
             System.out.println("username: "+ username);
             pro.setCurrent_bidder(username);
             DataAccess.updateProduct(product.get());
-            response.setContentType("text/plain");  // Set content type of the response so that jQuery knows what it can expect.
-            response.setCharacterEncoding("UTF-8"); // You want world domination, huh?
+            response.setContentType("text/plain");
+            response.setCharacterEncoding("UTF-8");
             response.getWriter().write(
                     "                    <div class=\"form-group\">\n" +
                     "                        <div class=\"alert alert-success\" role=\"alert\" >\n" +
@@ -36,8 +36,8 @@ public class Bid extends HttpServlet {
                     "                ");
         }
         else{
-            response.setContentType("text/plain");  // Set content type of the response so that jQuery knows what it can expect.
-            response.setCharacterEncoding("UTF-8"); // You want world domination, huh?
+            response.setContentType("text/plain");
+            response.setCharacterEncoding("UTF-8");
             response.getWriter().write(
                             "                    <div class=\"form-group\">\n" +
                             "                        <div class=\"alert alert-danger\" role=\"alert\" >\n" +

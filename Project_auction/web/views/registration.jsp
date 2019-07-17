@@ -39,7 +39,7 @@
 
                 <div class="mb-3">
                     <label for="password">Password</label>
-                    <input type="text" class="form-control" id="password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+                    <input type="password" class="form-control" id="password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
                     <div class="invalid-feedback">
                         Password is required and must contain minimum of eight characters, at least one letter and one number
                     </div>

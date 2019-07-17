@@ -64,7 +64,7 @@
                 <div id="loader" class="spinner-border text-primary" role="status">
                     <span class="sr-only">Loading...</span>
                 </div>
-                <button class="btn btn-success btn-lg btn-block" id="checkoutBtn" type="submit">Continue to checkout</button>
+                <button class="btn btn-success btn-lg btn-block" id="checkoutBtn" type="submit">PAY</button>
             </form>
         </div>
     </div>
