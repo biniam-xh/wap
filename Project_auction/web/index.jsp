@@ -18,9 +18,9 @@
 
 <section id="hero" class="wow fadeIn">
   <div class="hero-container">
-    <h1>Welcome to eAuctions</h1>
+    <h1>Welcome to Fairfield antique eAuctions</h1>
     <h2>one of the nation's foremost fine art auction platform</h2>
-    <img src="resources/img/hero-img.png" alt="Hero Imgs">
+    <img src="resources/img/large_293088-154_1.jpg" alt="Hero Imgs" width="30%">
     <a href="/Project_auction/home" class="btn-s">Get Started</a>
 
   </div>

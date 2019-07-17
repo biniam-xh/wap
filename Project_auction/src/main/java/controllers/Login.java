@@ -22,10 +22,14 @@ public class Login extends HttpServlet {
         String password = request.getParameter("password");
         String remember_me = request.getParameter("remember_me");
 
-        Optional<User> loggedUser = users.stream().filter(x-> x.getUsername().equals(username) && x.getPassword().equals(password)).findFirst();
-        if(loggedUser.isPresent()){
+
+//        Optional<User> loggedUser = users.stream().filter(x-> x.getUsername().equals(username) && x.getPassword().equals(password)).findFirst();
+//        if(loggedUser.isPresent()){
+        if(DataAccess.checkLogin(username,password)){
+            User user = DataAccess.getUser(username);
             HttpSession session = request.getSession();
-            session.setAttribute("username", loggedUser.get().getUsername());
+            session.setAttribute("username", user.getUsername());
+            session.setAttribute("address", user.getAddress());
 
             if(remember_me != null){
                 Cookie ck = new Cookie("remember_me", username);
@@ -49,26 +53,18 @@ public class Login extends HttpServlet {
                 }
             }
 
-            Cookie ck2 = new Cookie("promo", "$100");
-            ck2.setMaxAge(60*60*24*30);
-
-            response.addCookie(ck2);
 
             response.sendRedirect(request.getContextPath() + "/home");
         }
         else{
+            request.setAttribute("error", true);
             request.getRequestDispatcher("/views/login.jsp").forward(request,response);
         }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        try {
-            DataAccess.getProductList();
 
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
         Cookie cookie = null;
         Cookie[] cookies = null;
         // Get an array of Cookies associated with this domain

@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 
-@WebFilter(urlPatterns = {"/login", "/home"})
+@WebFilter(urlPatterns = {"/login", "/home", "/product", "/MyProducts", "/checkout"})
 public class LoginFilter implements Filter {
 
     @Override

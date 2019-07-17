@@ -1,5 +1,7 @@
 package controllers;
 
+import data.DataAccess;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,6 +16,13 @@ public class Home extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        try {
+
+            request.setAttribute("products", DataAccess.getProductList(""));
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         request.getRequestDispatcher("views/home.jsp").forward(request,response);
     }
 }
